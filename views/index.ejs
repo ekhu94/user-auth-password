@@ -3,6 +3,11 @@
 
 <div class="container"> 
     <h1>All Users</h1>
+    <ul>
+        <% for (let user of users) { %> 
+            <li><%= user.username %> </li>
+        <% } %> 
+    </ul>
 </div>
 
 <%- include('partials/footer') %>
